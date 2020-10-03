@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  api_server:
+    build: ./api
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./api:/usr/src/app
+    command: bash -c "cargo watch -x run"

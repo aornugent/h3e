@@ -1,0 +1,12 @@
+[package]
+name = "h3e"
+version = "0.1.0"
+authors = ["Andrew O'Reilly-Nugent <aornugent@gmail.com>"]
+build = "build.rs"
+edition = "2018"
+
+[dependencies]
+libh3 = "0.1.8"
+
+[build-dependencies]
+cmake = "0.1"

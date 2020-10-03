@@ -1,0 +1,3 @@
+[submodule "api/h3"]
+	path = api/h3
+	url = https://github.com/uber/h3
