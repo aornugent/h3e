@@ -7,4 +7,6 @@ services:
       - "3001:3001"
     volumes:
       - ./api:/usr/src/app
-    command: bash -c "cargo watch -x run"
+    environment:
+      - ROCKET_ENV=prod
+    command: bash -c "cargo watch --poll -x run"
