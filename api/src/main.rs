@@ -1,5 +1,3 @@
-#![feature(proc_macro_hygiene, decl_macro)]
-
 #[macro_use]
 extern crate rocket;
 extern crate libh3;
@@ -54,8 +52,8 @@ fn poly(resolution: u8) -> std::string::String {
   format!("success: {}, compact: {}", m, n)
 }
 
-fn main() {
-    rocket::ignite()
+#[launch]
+fn rocket() -> _ {
+    rocket::build()
         .mount("/api", routes![area, poly, deg, rad])
-        .launch();
 }
