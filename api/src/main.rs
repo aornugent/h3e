@@ -1,7 +1,6 @@
 #[macro_use]
 extern crate rocket;
 extern crate libh3;
-extern crate libh3_sys;
 
 #[get("/deg")]
 fn deg() -> std::string::String {
