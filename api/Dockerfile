@@ -1,4 +1,4 @@
-FROM rustlang/rust:nightly
+FROM rust
 
 RUN apt-get update && apt-get -y install cmake
 RUN cargo install cargo-watch
